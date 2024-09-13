@@ -1,0 +1,130 @@
+body {
+  -webkit-user-select: none; /* Safari */
+  -moz-user-select: none; /* Firefox */
+  -ms-user-select: none; /* Internet Explorer/Edge */
+  user-select: none; /* Non-prefixed version, currently supported by Chrome, Opera, and Edge */
+}
+
+.navbar a {
+  text-shadow: 0 1px 2px #000, 0 5px 5px rgba(0, 0, 0, 0.3);
+  font-size: 1.3em;
+  font-weight: bold;
+}
+
+.container {
+  min-height: 85vh; /* Asegura que el contenedor tenga al menos la altura del viewport */
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+}
+
+#row-contenido {
+  width: 100%;
+  min-height: 78vh; /* Asegura que el contenedor tenga al menos la altura del viewport */
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.row {
+  border: none;
+}
+
+.col {
+  width: 50%;
+  min-height: 78vh;
+}
+
+.card {
+  box-shadow: 0 5px 5px rgba(0, 0, 0, 0.3);
+}
+
+/* Estilo general para evitar superposiciones */
+#reactImage {
+  border-radius: 1em;
+  box-shadow: 0 5px 5px rgba(0, 0, 0, 0.3);
+  width: 100%; /* Asegura que la imagen se ajuste al contenedor */
+  height: auto; /* Mantiene la relación de aspecto */
+}
+
+/************/
+#batmanContainer {
+  background-size: cover;
+  background-repeat: no-repeat;
+  background-position: center;
+  background-image: url(/assets/images/fondo.jpeg);
+  box-shadow: 0 5px 10px rgba(0, 0, 0, 0.3);
+  border-radius: 2em 1em;
+  height: 100%;
+  min-height: 580px;
+}
+
+.batman {
+  position: fixed;
+  border-radius: 50%;
+  min-width: 270px;
+  height: 270px;
+  background-size: contain;
+  background-repeat: no-repeat;
+  background-position: center;
+  background-image: url(/assets/images/batmanOFF.jpg);
+  box-shadow: 0 5px 10px rgba(0, 0, 0, 0.3);
+}
+
+.batman_activo {
+  background-image: url(/assets/images/batmanON.gif);
+}
+
+#batimision {
+  border: 2px solid rgb(71, 70, 70);
+}
+
+/* Estilos para el botón de WhatsApp */
+.whatsapp-btn {
+  z-index: 2;
+}
+
+.whatsapp-btn img {
+  width: 50px;
+  height: 50px;
+  filter: drop-shadow(0px 4px 10px rgba(0, 0, 0, 0.5));
+  transition: transform 0.3s ease;
+}
+
+.whatsapp-btn img:hover {
+  transform: scale(1.1);
+}
+
+/************/
+
+footer h4 {
+  text-shadow: 0 5px 5px rgba(0, 0, 0, 0.3);
+}
+
+/* Responsive */
+@media (max-width: 767px) {
+  .card {
+    height: 150px; /* Ajusta la altura de las tarjetas según sea necesario */
+  }
+  .navbar-brand {
+    font-size: 1.2em;
+  }
+
+  .navbar-nav .nav-link {
+    font-size: 1em;
+  }
+
+  .text-center {
+    text-align: center !important;
+  }
+
+  #batmanContainer {
+    min-height: 380px;
+  }
+
+  .batman {
+    min-width: 200px;
+    height: 200px;
+  }
+}
