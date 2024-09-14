@@ -53,7 +53,7 @@ body {
   background-size: cover;
   background-repeat: no-repeat;
   background-position: center;
-  background-image: url("images/fondo.jpeg");
+  background-image: url("../images/fondo.jpeg");
   box-shadow: 0 5px 10px rgba(0, 0, 0, 0.3);
   border-radius: 2em 1em;
   height: 100%;
@@ -68,12 +68,12 @@ body {
   background-size: contain;
   background-repeat: no-repeat;
   background-position: center;
-  background-image: url("batmanOFF.jpg");
+  background-image: url("../images/batmanOFF.jpg");
   box-shadow: 0 5px 10px rgba(0, 0, 0, 0.3);
 }
 
 .batman_activo {
-  background-image: url("../../assets/images/batmanON.gif");
+  background-image: url("../images/batmanON.gif");
 }
 
 #batimision {
